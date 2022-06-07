@@ -10,9 +10,31 @@
     background-color: #1A202C;
   }
   .centar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
+  
   }
+ .borde {
+   
+ }
+ .card {
+ 
+  margin: 30px;
+ }
+ .card-img-top {
+  min-width: 286px;
+  min-height: 286px;
+  object-fit: cover;
+ }
+ .products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+ }
+ 
+ .card-img-top{
+   height: 100%;
+   min-height: 286px;
+   max-height: 286px;
+ }
