@@ -12,42 +12,38 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <header>
       <nav class="navbar bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">
-            <img
-              src="un-pan.png"
-              alt=""
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />
-            Marcos Matos Shop
-          </a>
+        <div class="container-fluid d-flex justify-content-between">
+          <div class="col">
+            <a class="navbar-brand text-light" href="#">
+              <img
+                src="un-pan.png"
+                alt=""
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              Marcos Matos Shop
+            </a>
+          </div>
+        <div class="col">
+          <form class="d-flex " role="search">
+            <input id="wage" class="form-control input radius" type="text" placeholder="Buscar Productos" onBlur="filtrar">
+            <button class="btn btn-light me-5 radius-b" id="myBtn" type="button"> <span><i class='bx bx-search-alt bx-sm color pt-1' ></i></span></button>
+          </form>
         </div>
+        
+        <div class="col"></div>
+      </div>
       </nav>
     </header>
-    <div class="centar">
-      <div class="container">
-        <form class="form-inline">
-          <input
-            class="form-control mr-sm-2"
-            type="text"
-            placeholder="Buscar"
-            aria-label="Search"
-            id="formulario"
-          />
-          <button class="btn btn-success" onclick="getProducts()" id="boton">
-            Buscar
-          </button>
-        </form>
-      </div>
       <!--Desde aqui la parte de render de las tarjetas-->
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="products"></div>
     </div>
     <script
@@ -55,6 +51,7 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script src="products.js"></script>
     <script src="logica.js"></script>
   </body>
