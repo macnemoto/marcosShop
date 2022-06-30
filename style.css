@@ -1,7 +1,7 @@
 * {
-  margin: 0;
+   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -66,5 +66,57 @@ body {
   color: white;
 }
 .h-tama {
-  height: 560px;
+  height: 30rem;
+}
+h5{
+  size: 12px !important; 
+}
+
+.a-element{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 700;
+}
+.price{
+font-weight: 700;
+font-size: 20px;
+}
+.sale{
+  font-size: 12px;
+  color: #1dd826;
+  font-weight: 700;
+}
+#caveat{
+text-decoration: none;
+color: white;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+#tooltip{
+  color: white;
+  background-color: black;
+  border-radius: 5%;
+  padding: 10px;
+  width: 150px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.card-text {
+  margin: 0px;
+  line-height:1.2vh;
+}
+
+.buton-card{
+  margin-top: 20px;
+  background-color: #008000;
+}
+
+.buton-card-ns{
+  margin-top: 6.1vh;
+  background-color: #800064;
+}
+.btn-secondary {
+  background: #9D65C9;
 }

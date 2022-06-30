@@ -2,6 +2,12 @@ const link = "http://localhost:3000/";
 const product = "product/";
 
 const htmlResponse = document.querySelector(".products");
+const caveat = document.querySelector("#caveat");
+
+tippy("#caveat", {
+  content: "Precio sin el Descuento.",
+  animation: "shift-away",
+});
 
 //fetch data
 fetch(link)
@@ -153,24 +159,41 @@ function validate(e) {
       htmlResponse.innerHTML = "";
       data.forEach((product) => {
         htmlResponse.innerHTML += `
-          <div class="card card-color h-tama" style="width: 17rem ">
+          <div class="card card-color h-tama" style="width: 18rem ">
           <img src=" ${
             product.url_image == null || product.url_image == ""
               ? "https://i.pinimg.com/564x/a3/6b/42/a36b422bb2bebcbd77bba846b83ddf5d.jpg"
               : product.url_image
           }" class="card-img-top img-fluid " alt="..." />
           <div class="card-body color-card">
-            <h5 class="card-title">${product.name}</h5>
+            <a class="a-element" href="name product">${product.name}</a>
             <p class="card-text">
-            <p class="sizen-1">Desde</p>
-              <br> Precio: ${product.price} $ <br/>
+            <span class="sizen-1"><br> ${
+              product.discount == 0
+                ? ""
+                : `Desde <del> $${(
+                    product.price +
+                    product.price * (product.discount / 100)
+                  ).toLocaleString(
+                    "es-CL"
+                  )}<a id="caveat" href="#"><i class='bx bx-question-mark bx-border-circle'></i></a></del>`
+            }
+             <br/> </span>
+              <span class="price"><br>$ ${product.price.toLocaleString(
+                "es-CL"
+              )} <br/> </span>
               ${
                 product.discount == 0
                   ? ""
-                  : `<span class="badge text-bg-danger pb-3"><br>Sale!:${product.discount}% OFF!<br/></span>`
+                  : `<span class="sale"><br>Ahorra ${product.discount}%<br/></span>`
               }
             </p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+            ${
+              product.discount == 0
+                ? `<a href="#" class="btn btn-secondary buton-card-ns">Comprar</a>`
+                : `<a href="#" class="btn btn-success buton-card">Comprar</a>`
+            }
+           
           </div>
         </div>
           `;
