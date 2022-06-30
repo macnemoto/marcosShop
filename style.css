@@ -13,8 +13,8 @@ body {
   margin: 30px;
 }
 .card-img-top {
-  min-width: 286px;
-  min-height: 286px;
+  width: 100%;
+  height: 15vw;
   object-fit: cover;
 }
 .products {
@@ -64,4 +64,7 @@ body {
 .card-color {
   background-color: #1F0A4E;
   color: white;
+}
+.h-tama {
+  height: 560px;
 }

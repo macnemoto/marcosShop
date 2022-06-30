@@ -153,12 +153,12 @@ function validate(e) {
       htmlResponse.innerHTML = "";
       data.forEach((product) => {
         htmlResponse.innerHTML += `
-          <div class="card card-color" style="width: 18rem">
+          <div class="card card-color h-tama" style="width: 17rem ">
           <img src=" ${
             product.url_image == null || product.url_image == ""
               ? "https://i.pinimg.com/564x/a3/6b/42/a36b422bb2bebcbd77bba846b83ddf5d.jpg"
               : product.url_image
-          }" class="card-img-top img-fluid" alt="..." />
+          }" class="card-img-top img-fluid " alt="..." />
           <div class="card-body color-card">
             <h5 class="card-title">${product.name}</h5>
             <p class="card-text">
