@@ -6,15 +6,16 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  background-color: #1a202c;
+  background-color: #4618AC;
 }
 
 .card {
   margin: 30px;
 }
 .card-img-top {
-  width: 100%;
-  height: 15vw;
+  min-height: 300px;
+  max-height: 301px;
+   overflow: auto; 
   object-fit: cover;
 }
 .products {
@@ -27,8 +28,8 @@ body {
 
 .card-img-top {
   height: 100%;
-  min-height: 286px;
-  max-height: 286px;
+  /* min-height: 286px;
+  max-height: 286px; */
 }
 #boton {
   margin: 1px;
@@ -78,6 +79,7 @@ h5{
   font-size: 15px;
   line-height: 1;
   font-weight: 700;
+
 }
 .price{
 font-weight: 700;
@@ -119,4 +121,19 @@ margin-bottom: 20px;
 }
 .btn-secondary {
   background: #9D65C9;
+}
+#carouselExampleIndicators {
+
+}
+.size-y{
+  height: 400px;
+  width: 100%;
+}
+.carousel {
+  margin: 0% 15% 0% 15%;
+}
+@media (max-width: 1420px) { 
+  .carousel {
+    margin: 0% 0% 0% 0%;
+  }
 }
