@@ -3,11 +3,21 @@ const product = "product/";
 
 const htmlResponse = document.querySelector(".products");
 const caveat = document.querySelector("#caveat");
+const preloader = document.querySelector(".preloader")
 
 tippy("#caveat", {
   content: "Precio sin el Descuento.",
   animation: "shift-away",
 });
+
+//loader
+
+window.addEventListener("load", function() {
+  preloader.style.display = "none";
+}); 
+
+//End loader
+
 
 //fetch data
 fetch(link)
@@ -245,6 +255,9 @@ function validate(e) {
   fetch(link + product + text)
     .then((response) => response.json())
     .then((data) => {
+      window.addEventListener("load", function() {
+        preloader.style.display = "none";
+      }); 
       console.log(data);
       htmlResponse.innerHTML = "";
       data.forEach((product) => {

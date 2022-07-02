@@ -12,13 +12,17 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    
-   
     <link
   rel="stylesheet"
   href="https://unpkg.com/tippy.js@6/animations/shift-away.css"
 />
     <link rel="stylesheet" href="style.css" />
+     <!--loader the page-->
+     <div class="preloader">
+      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+     <!--End loader the page-->
+  
   </head>
   <body>
     <header>
@@ -48,7 +52,7 @@
       </nav>
     </header>
 
-    
+     
 <!--Desce aqui el carrousel-->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
   <div class="carousel-indicators">
@@ -76,13 +80,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-
-
-
-
-
-      <!--Desde aqui la parte de render de las tarjetas-->
+   <!--Desde aqui la parte de render de las tarjetas-->
     </div>
     <div class="container-fluid">
       <div class="products"></div>
@@ -107,7 +105,6 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"
   ></script>
-<!--Star the footer-->
 <!-- Footer -->
 <footer class="bg-dark text-center text-white">
   <!-- Grid container -->
