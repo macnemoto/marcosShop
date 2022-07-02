@@ -16,7 +16,7 @@ body {
   min-height: 300px;
   max-height: 301px;
   overflow: auto;
-  object-fit: cover;
+  object-fit: contain;
   background-color: white;
 }
 .products {
@@ -107,8 +107,7 @@ h5 {
 }
 .card-text {
   margin: 0px;
-  padding-top: 1vh;
-  line-height: 1;
+  line-height: 0.6;
 }
 
 .buton-card {
@@ -139,5 +138,8 @@ h5 {
 }
 
 .size-card{
-height: 500px;
+height: 40px;
+}
+.none {
+  text-decoration: none;
 }
