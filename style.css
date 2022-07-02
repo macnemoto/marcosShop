@@ -1,22 +1,23 @@
 * {
-   margin: 0;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  background-color: #4618AC;
+  background-color: #4618ac;
 }
 
 .card {
-  margin: 30px;
+   margin: 30px;
 }
 .card-img-top {
   min-height: 300px;
   max-height: 301px;
-   overflow: auto; 
+  overflow: auto;
   object-fit: cover;
+  background-color: white;
 }
 .products {
   display: flex;
@@ -31,17 +32,15 @@ body {
   /* min-height: 286px;
   max-height: 286px; */
 }
+
 #boton {
   margin: 1px;
 }
 #boton:hover {
-  
   color: white;
-
 }
 .form-inline {
   margin-top: 50px;
-  
 }
 .color {
   color: grey;
@@ -54,49 +53,50 @@ body {
 }
 
 .color-card {
-  background-color: #1F0A4E;
+  background-color: #1f0a4e;
   color: white;
 }
-.sizen-1{
+.sizen-1 {
   font-size: 15px;
-  color: #8F85A7;
+  color: #8f85a7;
   font-weight: bold;
 }
 .card-color {
-  background-color: #1F0A4E;
+  background-color: #1f0a4e;
   color: white;
 }
 .h-tama {
-  height: 30rem;
+  min-height: 520px; 
 }
-h5{
-  size: 12px !important; 
+.h-tama:hover{
+  opacity: 0.9;
+}
+h5 {
+  size: 12px !important;
 }
 
-.a-element{
+.a-element {
   text-decoration: none;
   color: white;
   font-size: 15px;
   line-height: 1;
   font-weight: 700;
-
 }
-.price{
-font-weight: 700;
-font-size: 20px;
+.price {
+  font-weight: 700;
+  font-size: 20px;
 }
-.sale{
+.sale {
   font-size: 12px;
   color: #1dd826;
   font-weight: 700;
 }
-#caveat{
-text-decoration: none;
-color: white;
-margin-left: 20px;
-margin-bottom: 20px;
+#caveat {
+  /* text-decoration: none; */
+  color: white;
+  margin-bottom: 20px;
 }
-#tooltip{
+#tooltip {
   color: white;
   background-color: black;
   border-radius: 5%;
@@ -107,33 +107,37 @@ margin-bottom: 20px;
 }
 .card-text {
   margin: 0px;
-  line-height:1.2vh;
+  padding-top: 1vh;
+  line-height: 1;
 }
 
-.buton-card{
+.buton-card {
   margin-top: 20px;
   background-color: #008000;
 }
 
-.buton-card-ns{
-  margin-top: 6.1vh;
+.buton-card-ns {
+  margin-top: 6vh;
   background-color: #800064;
 }
 .btn-secondary {
-  background: #9D65C9;
+  background: #9d65c9;
 }
 #carouselExampleIndicators {
-
 }
-.size-y{
+.size-y {
   height: 400px;
   width: 100%;
 }
 .carousel {
   margin: 0% 15% 0% 15%;
 }
-@media (max-width: 1420px) { 
+@media (max-width: 1420px) {
   .carousel {
     margin: 0% 0% 0% 0%;
   }
+}
+
+.size-card{
+height: 500px;
 }
